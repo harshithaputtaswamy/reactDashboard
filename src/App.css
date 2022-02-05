@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+
+tbody + thead{
+  display: none;
+}
+
+.md-form {
+  margin: 0 !important;
+}
+
+.progress {
+  height: 3px !important;
+}
+
+.progress-bar {
+  background-color: #8a61fb !important;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+    background-color: #f5f6ff; /* Choose your own color here */
+}
+
+.custBtn:focus {
+  border-bottom: 2px solid blue !important;
+  outline: none;
+}
