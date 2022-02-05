@@ -8,6 +8,7 @@ import { BsThreeDots } from 'react-icons/bs'
 import { AiOutlineUpload } from 'react-icons/ai'
 
 const Home = () =>{
+  const [btnActive, setBtnActive] = useState({active: 'incoming'})
   const [data, setData] = useState({
     columns: [
       {
@@ -279,8 +280,8 @@ const Home = () =>{
             buttonText={<p className="p-0 m-0"><AiOutlineUpload size={15} className="mr-2"/>Export</p>}/>
         </div>
         <div className="d-flex flex-row">
-          <button onClick={() => {}} className="border-0 py-2 px-3 bg-transparent small custBtn">Incoming</button>
-          <button onClick={() => {}} className="border-0 py-2 px-3 bg-transparent small custBtn">Invoices</button>
+          <button onClick={() => {setBtnActive({active: 'incoming'})}} className={"py-2 px-3 bg-transparent small custBtn" + String(btnActive["active"] === "incoming" ? 'Active' : '')} id="incoming">Incoming</button>
+          <button onClick={() => {setBtnActive({active: 'invoice'})}} className={"py-2 px-3 bg-transparent small custBtn" + String(btnActive["active"] === "invoice" ? 'Active' : '')} id="invoice">Invoices</button>
         </div>
         <MDBDataTable
          id="detail_table"

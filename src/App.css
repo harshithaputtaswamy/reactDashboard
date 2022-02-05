@@ -58,7 +58,12 @@ tbody + thead{
     background-color: #f5f6ff; /* Choose your own color here */
 }
 
-.custBtn:focus {
+.custBtnActive {
+  border: none;
   border-bottom: 2px solid blue !important;
   outline: none;
+}
+
+.custBtn {
+  border: none;
 }
