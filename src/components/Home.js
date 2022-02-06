@@ -87,7 +87,6 @@ const Home = () =>{
   const barOptions = {
     chart: {
       id: "basic-bar",
-      height: 50,
       toolbar: {
         show: false
       },
@@ -142,7 +141,6 @@ const Home = () =>{
   const lineOptions = {
     chart: {
       type: 'area',
-      height: 50,
       zoom: {
         enabled: false
       },
@@ -263,7 +261,7 @@ const Home = () =>{
               </div>
             </div>
             <div id="chart">
-              <ReactApexChart options={lineOptions} series={lineSeries} type="area" height="210" width="100%" />
+              <ReactApexChart options={lineOptions} series={lineSeries} type="area" height="180" width="100%" />
             </div>
           </div>
         </div>
