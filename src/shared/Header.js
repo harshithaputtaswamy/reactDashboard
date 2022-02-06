@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
-import { MDBInput, MDBTable, MDBTableBody, MDBTableHead, MDBCard, MDBCardBody, MDBDataTable, MDBDataTableV5 } from 'mdbreact';
+import React from 'react';
+import { MDBInput } from 'mdbreact';
 import { AiOutlineSetting, AiOutlineSearch } from 'react-icons/ai'
 import { BiMessageAlt } from 'react-icons/bi'
 import { TiBell } from 'react-icons/ti'
 import { RiArrowDownSLine } from 'react-icons/ri'
-import { BsPersonBoundingBox } from 'react-icons/bs'
 import profile from '../assets/profile.png'
 
 const Header = () =>{

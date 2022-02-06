@@ -1,12 +1,11 @@
-import React, { useState, useEffect } from "react";
-import { Link } from 'react-router-dom';
-import {  ProSidebar, SidebarHeader, SidebarFooter, SidebarContent, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
-import { FaGem, FaHeart, FaList, FaRegHeart, FaChartBar, FaGalacticRepublic } from "react-icons/fa";
-import { FiHome, FiLogOut, FiArrowLeftCircle, FiArrowRightCircle } from "react-icons/fi";
-import { RiChatPrivateLine } from "react-icons/ri";
-import { BiCog } from "react-icons/bi";
-import { GiShipWheel } from "react-icons/gi";
-import { IoIosApps } from "react-icons/io";
+import React from "react";
+import {  ProSidebar, SidebarHeader, SidebarContent, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
+import { FaListUl, FaRegFile } from "react-icons/fa";
+import { FiHome, FiLogOut } from "react-icons/fi";
+import { BiCog, BiBook, BiFolder } from "react-icons/bi";
+import { BsPersonSquare } from "react-icons/bs";
+import { AiOutlineGlobal, AiOutlineInbox, AiOutlineAppstore } from "react-icons/ai";
+import { MdOutlineContactSupport } from "react-icons/md";
 import logo from "../assets/logo.png"
 
 import 'react-pro-sidebar/dist/css/styles.css';
@@ -28,34 +27,29 @@ import '../styles/SideBar.css'
           <Menu iconShape="square">
             <p style={{fontSize: 10, margin: 5}}>MAIN</p>
             <MenuItem active={true} icon={<FiHome />}><a href="/dashboard">Dashboard</a></MenuItem>
-            <MenuItem icon={<BiCog />}>Discover</MenuItem>
-            <SubMenu title="Users" icon={<RiChatPrivateLine />}>
+            <MenuItem icon={<AiOutlineGlobal />}>Discover</MenuItem>
+            <SubMenu title="Users" icon={<BsPersonSquare />}>
               <MenuItem icon={<BiCog />}>Sub Menu</MenuItem>
             </SubMenu>
-            <SubMenu title="Documents" icon={<FaGalacticRepublic />}>
+            <SubMenu title="Documents" icon={<BiBook />}>
             </SubMenu>
-            <SubMenu title="Applications" icon={<IoIosApps />}>
+            <SubMenu title="Applications" icon={<AiOutlineAppstore />}>
             </SubMenu>
-            <SubMenu title="Pages" icon={<IoIosApps />}>
+            <SubMenu title="Pages" icon={<FaRegFile />}>
             </SubMenu>
           </Menu>
           <Menu iconShape="square" style={{marginTop: 30}}>
             <p style={{fontSize: 10, margin: 5}}>SECONDARY</p>
-            <MenuItem icon={<BiCog />}>Support Center</MenuItem>
-            <MenuItem icon={<BiCog />}>Inbox</MenuItem>
-            <MenuItem icon={<BiCog />}>File Manager</MenuItem>
-            <MenuItem icon={<BiCog />}>Data List</MenuItem>
+            <MenuItem icon={<MdOutlineContactSupport />}>Support Center</MenuItem>
+            <MenuItem icon={<AiOutlineInbox />}>Inbox</MenuItem>
+            <MenuItem icon={<BiFolder />}>File Manager</MenuItem>
+            <MenuItem icon={<FaListUl />}>Data List</MenuItem>
           </Menu>
           <Menu iconShape="square" style={{marginTop: 30}}>
             <MenuItem icon={<BiCog />}>Settings</MenuItem>
             <MenuItem icon={<FiLogOut />}>Log Out</MenuItem>
           </Menu>
         </SidebarContent>
-          {/* <SidebarFooter>
-              <Menu iconShape="square">
-              <MenuItem icon={<FiLogOut />}>Logout</MenuItem>
-              </Menu>
-          </SidebarFooter> */}
       </ProSidebar>
     </div>
   )
