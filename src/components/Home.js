@@ -227,7 +227,7 @@ const Home = () =>{
               options={barOptions}
               series={barSeries}
               type="bar"
-              width="500"
+              width="100%"
               height="100"
             />
           </div>
@@ -263,7 +263,7 @@ const Home = () =>{
               </div>
             </div>
             <div id="chart">
-              <ReactApexChart options={lineOptions} series={lineSeries} type="area" height="210" />
+              <ReactApexChart options={lineOptions} series={lineSeries} type="area" height="210" width="100%" />
             </div>
           </div>
         </div>
